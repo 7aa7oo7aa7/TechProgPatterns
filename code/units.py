@@ -31,7 +31,7 @@ class Unit(ABC):
     """Abstract class for all units"""
     def __init__(self, characteristics):
         self.characteristics = characteristics
-        self.health = self.characteristics['defence']
+        self.health = self.characteristics['defense']
 
 
 class UniqueUnit(Unit):
