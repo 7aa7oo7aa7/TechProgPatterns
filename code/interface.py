@@ -71,11 +71,8 @@ class BaseInterface(object):
 class UnitInterface(object):
     def __init__(self, unit):
         self.unit = unit
-        self.in_greater_unit = False  # will be redone in part 3
 
     def basic_interface(self):
-        if self.in_greater_unit:
-            print(f"{self.unit.characteristics['name']} is now a part of a greater unit. You cannot control it separately.")
         print(f"You are now controlling {self.unit.characteristics['name']}. Your current health is {self.unit.health}")
 
     def info(self):
