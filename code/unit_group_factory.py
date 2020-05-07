@@ -10,7 +10,7 @@ from abc import ABC, abstractmethod
 class UnitGroupFactory(abstract_factory.AbstractFactory):
     """Abstract factory for ultra units"""
     def __init__(self):
-        super.__init__(0)
+        super().__init__(0)
     
     @abstractmethod
     def create(self, *args):
